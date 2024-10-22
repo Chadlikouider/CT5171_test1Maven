@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('GetProject') {
             steps {
-                git branch 'main' 'https://github.com/Chadlikouider/CT5171_test1Maven.git'
+                git 'https://github.com/Chadlikouider/CT5171_test1Maven.git'
             }
         }
         stage ('build') {
