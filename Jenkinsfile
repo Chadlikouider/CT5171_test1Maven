@@ -16,6 +16,11 @@ pipeline {
                 sh 'mvn compiler:compile'
             }
         }
+        stage ('Package') {
+            steps {
+                sh 'mvn package'
+            }
+        }
         stage ('Exec') {
             steps {
                 sh 'mvn exec:java'
